@@ -288,8 +288,7 @@
                 Console.WriteLine("2- Student Mode");
                 Console.WriteLine("3- Exit");
 
-                int choice =
-                    int.Parse(Console.ReadLine());
+                int choice =Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
                 {
