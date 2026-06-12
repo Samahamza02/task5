@@ -147,13 +147,13 @@
                 Console.WriteLine("2- Choose One");
                 Console.WriteLine("3- Multiple Choice");
 
-                int type = int.Parse(Console.ReadLine());
+                int type = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Question: ");
                 string header = Console.ReadLine();
 
                 Console.Write("Marks: ");
-                int marks = int.Parse(Console.ReadLine());
+                int marks = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("0-Easy");
                 Console.WriteLine("1-Medium");
@@ -184,7 +184,7 @@
                         }
 
                         Console.Write("Correct Choice Number: ");
-                        int correctChoice = int.Parse(Console.ReadLine());
+                        int correctChoice = Convert.ToInt32(Console.ReadLine());
 
                         QuestionBank.Add(
                             new ChooseOneQuestion(header, marks, level,
@@ -203,7 +203,7 @@
                         }
 
                         Console.Write("How many correct answers? ");
-                        int num = int.Parse(Console.ReadLine());
+                        int num = Convert.ToInt32(Console.ReadLine());
 
                         List<int> answers = new List<int>();
 
